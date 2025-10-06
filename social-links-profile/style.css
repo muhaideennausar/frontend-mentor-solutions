@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* === COLOR === */
+    --green: #c5f82a;
+    --white: #ffffff;
+    --grey-700: #333333;
+    --grey-800: #1f1f1f;
+    --grey-900: #141414;
+
+    /* === FONT === */
+    --inter: 'Inter', sans-serif;
+    --primary-font-size: 3rem;
+    --secondary-font-size: 1.6rem;
+}
+
+/* ===== MOBILE FIRST APPROACH ===== */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    background-color: var(--grey-900);
+    font-family: var(--inter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.container {
+    max-width: 35rem;
+    height: auto;
+    background-color: var(--grey-800);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 3rem;
+}
+
+.profile-name {
+    font-size: var(--primary-font-size);
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.profile-region {
+    color: var(--green);
+    font-size: var(--secondary-font-size);
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+}
+
+.profile-description {
+    font-size: var(--secondary-font-size);
+    font-weight: normal;
+    margin-bottom: 3rem;
+}
+
+.links-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.links-container>button {
+    color: var(--white);
+    background-color: var(--grey-700);
+    height: 5rem;
+    width: 100%;
+    font-size: var(--secondary-font-size);
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.links-container>button:active {
+    background-color: var(--green);
+    color: var(--grey-900);
+}
+
+/* ===== DESKTOP VERSION ===== */
+
+:root {
+    /* === FONT === */
+    --primary-font-size: 2.5rem;
+    --secondary-font-size: 1.5rem;
+}
+
+.container {
+    padding: 3.5rem;
+}
+
+.profile-picture {
+    width: 8rem;
+    margin-bottom: 2.5rem;
+}
+
+.profile-name {
+    margin-bottom: 1rem;
+}
+
+.profile-description {
+    margin-bottom: 2.5rem;
+}
+
+.links-container>button {
+    height: 4rem;
+}

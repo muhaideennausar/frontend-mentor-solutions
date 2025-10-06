@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* === COLORS === */
+    --white: #ffffff;
+
+    --stone-100: #f3e6d8;
+    --stone-150: #e4ded8;
+    --stone-600: #5f574e;
+    --stone-900: #302d2c;
+
+    --brown-800: #854632;
+
+    --rose-800: #7b284f;
+    --rose-50: #fff5fa;
+
+    /* === FONTS === */
+    --default-text-size: 1.8rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--white);
+}
+
+.recipe-banner {
+    width: 100%;
+    object-fit: contain;
+}
+
+.recipe-container {
+    padding: 0 3rem;
+}
+
+.recipe-title {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: normal;
+    font-size: 3.5rem;
+    line-height: 100%;
+    color: var(--stone-900);
+    margin: 3.5rem 0;
+}
+
+.recipe-description {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    font-size: var(--default-text-size);
+    color: var(--stone-600);
+    line-height: 120%;
+}
+
+.preparation-box {
+    padding: 2rem 3rem;
+    margin: 5rem 0;
+    background-color: var(--rose-50);
+    border-radius: 1rem;
+}
+
+.preparation-box>h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--rose-800);
+    margin-bottom: 1.5rem;
+}
+
+.preparation-box>ul {
+    padding-left: 2rem;
+}
+
+.preparation-box>ul>li {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--default-text-size);
+    line-height: 150%;
+    padding-left: 1.5rem;
+    margin: 5px 0;
+    color: var(--stone-600);
+}
+
+.preparation-box>ul>li::marker {
+    color: var(--rose-800);
+}
+
+.section-title {
+    font-family: 'Young Serif', sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--brown-800);
+    margin-bottom: 2rem;
+}
+
+.ingredients-section>ul,
+.instruction-section>ol {
+    padding-left: 2rem;
+}
+
+.ingredients-section>ul>li,
+.instruction-section>ol>li {
+    font-family: 'Outfit', sans-serif;
+    font-weight: normal;
+    font-size: var(--default-text-size);
+    color: var(--stone-600);
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.ingredients-section>ul>li::marker,
+.instruction-section>ol>li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+
+hr {
+    margin: 3rem 0;
+    border-color: var(--stone-150);
+}
+
+.nutrition-section>p {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--default-text-size);
+    line-height: 150%;
+    color: var(--stone-600);
+}
+
+table {
+    margin: 5rem 0;
+    width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+table tr {
+    border-bottom: 1px solid #e4ded8;
+    outline: none;
+}
+
+table td {
+    padding: 1.5rem 0;
+}
+
+table td:nth-of-type(1) {
+    font-family: 'Outfit', sans-serif;
+    font-size: var(--default-text-size);
+    color: var(--stone-600);
+    padding-left: 2rem;
+}
+
+table td:nth-of-type(2) {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--brown-800);
+}
+
+table tr:last-child {
+    border-bottom: none;
+}
+
+/* ===== DESKTOP VERSION ===== */
+
+@media (min-width: 1024px) {
+    :root {
+        --default-text-size: 1.6rem;
+    }
+
+    body {
+        background-color: var(--stone-100);
+    }
+
+    .container {
+        max-width: 75rem;
+        background-color: var(--white);
+        margin: 10rem 0;
+        padding: 4rem;
+        border-radius: 2.5rem;
+    }
+
+    .recipe-banner {
+        border-radius: 1.25rem;
+    }
+
+    table {
+        margin-bottom: 0;
+    }
+
+    .preparation-box {
+        padding: 3rem;
+    }
+
+    .preparation-box>ul>li {
+        margin: 1rem 0;
+    }
+
+    .preparation-box>h3 {
+        margin-bottom: 2rem;
+    }
+
+    .preparation-box>ul>li:last-child {
+        margin-bottom: 0;
+    }
+
+    .section-title {
+        margin-bottom: 3rem;
+    }
+}
