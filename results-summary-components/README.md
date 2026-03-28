@@ -24,10 +24,12 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- JavaScript
+- Local JSON data
 
 ### What I learned
 
-This project was a great exercise in building a responsive card layout with clean visual hierarchy. I also practiced spacing, alignment, color usage, and component styling using only HTML and CSS.
+I practiced rendering UI content dynamically from a local JSON file using JavaScript. I also used array methods like `map()` to generate markup and `reduce()` to calculate the overall score.
 
 ### Continued development
 
