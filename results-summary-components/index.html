@@ -15,16 +15,17 @@
         <div class="card-1">
             <p class="medium-25">Your Result</p>
             <span class="gradient-circle">
-                <p class="extra-bold-70">76</p>
+                <p class="extra-bold-70" id="average-score">76</p>
                 <p class="medium-18">of 100</p>
             </span>
-            <p class="bold-32">Great</p>
-            <p class="bold-18">You scored higher than 65% of the people who have taken these tests.</p>
+            <p class="bold-32" id="result-label">Great</p>
+            <p class="bold-18" id="result-description">You scored higher than 65% of the people who have taken these
+                tests.</p>
         </div>
         <div class="card-2">
             <p class="medium-25" style="color: black;">Summary</p>
-            <div class="result-container">
-                <span class="result-card result-reaction">
+            <div class="result-container" id="summary-list">
+                <!-- <span class="result-card result-reaction">
                     <img src="./assets/icon-reaction.svg" alt="2D Illustration of Energy Icon">
                     <p class="medium-18-red">Reaction</p>
                     <p>80<span>/ 100</span></p>
@@ -43,11 +44,12 @@
                     <img src="./assets/icon-visual.svg" alt="2D Illustration of Eye Icon">
                     <p class="medium-18-blue">Visual</p>
                     <p>73<span>/ 100</span></p>
-                </span>
+                </span> -->
             </div>
             <button>Continue</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
