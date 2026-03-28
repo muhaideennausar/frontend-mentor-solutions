@@ -33,7 +33,7 @@ I practiced rendering UI content dynamically from a local JSON file using JavaSc
 
 ### Continued development
 
-In future iterations, I’d like to enhance this project by adding JavaScript support to load the summary data dynamically from a local JSON file. That would make the component more reusable and closer to a real-world UI pattern.
+In future iterations, I’d like to improve accessibility, add stronger focus states, and make the result text more configurable based on score ranges.
 
 ## Author
 
