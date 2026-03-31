@@ -100,7 +100,9 @@ content: url("./assets/image-product-mobile.jpg");
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/product-preview-card.git
+git clone https://github.com/muhaideennausar/frontend-mentor-solutions.git
+cd frontend-mentor-solutions
+cd product-preview-component
 ```
 
 2. Open `index.html` in your browser
