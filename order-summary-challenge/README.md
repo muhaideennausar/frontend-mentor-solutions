@@ -5,7 +5,7 @@ A clean and responsive solution to the **Frontend Mentor Order Summary Challenge
 ## Live Demo
 
 - **Live Site:** https://muhaideennausar.github.io/frontend-mentor-solutions/order-summary-challenge/
-- **GitHub Repository:** https://github.com/muhaideennausar/frontend-mentor-solutions/order-summary-challenge
+- **GitHub Repository:** https://github.com/muhaideennausar/frontend-mentor-solutions/tree/main/order-summary-challenge
 
 ## Overview
 
