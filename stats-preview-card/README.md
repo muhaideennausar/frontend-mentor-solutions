@@ -18,7 +18,7 @@ This is a solution to the [Stats Preview Card challenge on Frontend Mentor](http
 
 ### Links
 
-- **Solution repository:** [GitHub repo](https://github.com/muhaideennausar/frontend-mentor-solutions/stats-preview-card/)
+- **Solution repository:** [GitHub repo](https://github.com/muhaideennausar/frontend-mentor-solutions/tree/main/stats-preview-card/)
 - **Live site URL:** [Live demo](https://muhaideennausar.github.io/frontend-mentor-solutions/stats-preview-card/)
 
 ## Built with
