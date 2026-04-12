@@ -18,8 +18,8 @@ This is a solution to the [Social Proof Master Section challenge on Frontend Men
 
 ### Links
 
-- **Solution repository:** [GitHub repo](https://github.com/muhaideennausar/frontend-mentor-challenges/social-proof-master-section/)
-- **Live site URL:** [Live demo](https://muhaideennausar.github.io/frontend-mentor-challenges/social-proof-master-section/)
+- **Solution repository:** [GitHub repo](https://github.com/muhaideennausar/frontend-mentor-solutions/tree/main/social-proof-master-section/)
+- **Live site URL:** [Live demo](https://muhaideennausar.github.io/frontend-mentor-solutions/social-proof-master-section/)
 
 ## Built with
 
