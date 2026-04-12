@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="description"
+        content="Build a responsive Social proof section using HTML and CSS. Practice layout skills and create an optimal viewing experience for any device screen size.">
+    <meta name="keywords"
+        content="Frontend Mentor, Social proof section, HTML, CSS, responsive design, flexbox, CSS grid, mobile-first, web development, UI design">
+    <title>Social Proof Master Section | Frontend Master | Muhaideen Nausar</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+        <div class="top-section">
+            <div class="top-section__content">
+                <h1 class="top-section__headline">10,000+ of our users love our products.</h1>
+                <p class="top-section__description">We only provide great products combined with excellent customer
+                    service. See what our satisfied customers are saying about our services.</p>
+            </div>
+            <div class="rating-card">
+                <svg style="display: none;" aria-hidden="true">
+                    <symbol id="icon-custom-star" viewBox="0 0 17 16">
+                        <path
+                            d="M16.539 6.097a.297.297 0 00-.24-.202l-5.36-.779L8.542.26a.296.296 0 00-.53 0L5.613 5.117l-5.36.779a.297.297 0 00-.165.505l3.88 3.78-.917 5.34a.297.297 0 00.43.312l4.795-2.52 4.794 2.52a.296.296 0 00.43-.313l-.916-5.338L16.464 6.4c.08-.08.11-.197.075-.304z"
+                            fill="#EF9546" fill-rule="nonzero" />
+                    </symbol>
+                </svg>
+                <div class="rating-card__item" style="--index: 0">
+                    <div class="rating-card__star-icons">
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                    </div>
+                    <p class="rating-card__label">Rated 5 Stars in Reviews</p>
+                </div>
+                <div class="rating-card__item" style="--index: 1">
+                    <div class="rating-stars">
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                    </div>
+                    <p class="rating-card__label">Rated 5 Stars in Report Guru</p>
+                </div>
+                <div class="rating-card__item" style="--index: 2">
+                    <div class="rating-stars">
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                        <svg class="star">
+                            <use href="#icon-custom-star"></use>
+                        </svg>
+                    </div>
+                    <p class="rating-card__label">Rated 5 Stars in Best Tech</p>
+                </div>
+            </div>
+        </div>
+        <div class="review-cards">
+            <div class="review-cards__item">
+                <div class="review-card__user">
+                    <img src="./assets/image-colton.jpg" alt="User Avatar" class="review-card__user-avatar">
+                    <div class="review-card__user-detail">
+                        <p class="review-card__username">Colton Smith</p>
+                        <p class="review-card__user-label">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="review-card__content">"We needed the same printed design as the one we had ordered a week
+                    prior. Not only did they find the original order, but we also received it in time. Excellent!"</p>
+            </div>
+            <div class="review-cards__item">
+                <div class="review-card__user">
+                    <img src="./assets/image-irene.jpg" alt="User Avatar" class="review-card__user-avatar">
+                    <div class="review-card__user-detail">
+                        <p class="review-card__username">Irene Roberts</p>
+                        <p class="review-card__user-label">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="review-card__content">"Customer service is always excellent and very quick turn around.
+                    Completely delighted with the simplicity of the purchase and the speed of delivery."</p>
+            </div>
+            <div class="review-cards__item">
+                <div class="review-card__user">
+                    <img src="./assets/image-anne.jpg" alt="User Avatar" class="review-card__user-avatar">
+                    <div class="review-card__user-detail">
+                        <p class="review-card__username">Anne Wallace</p>
+                        <p class="review-card__user-label">Verified Buyer</p>
+                    </div>
+                </div>
+                <p class="review-card__content">"Put an order with this company and can only praise them for the very
+                    high standard. Will definitely use them again and recommend them to everyone!"</p>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
