@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+
+  --color-purple: hsl(257, 40%, 49%);
+  --color-magenta: hsl(300, 69%, 71%);
+}
