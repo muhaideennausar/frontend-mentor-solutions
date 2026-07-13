@@ -197,14 +197,8 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-auto {
-    width: auto;
   }
   .w-fit {
     width: fit-content;
@@ -212,14 +206,8 @@
   .w-full {
     width: 100%;
   }
-  .max-w-37 {
-    max-width: calc(var(--spacing) * 37);
-  }
   .max-w-37\.5 {
     max-width: calc(var(--spacing) * 37.5);
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
@@ -227,45 +215,26 @@
   .cursor-pointer {
     cursor: pointer;
   }
-  .resize {
-    resize: both;
-  }
   .flex-col {
     flex-direction: column;
   }
   .items-center {
     align-items: center;
   }
-  .gap-x-3 {
-    column-gap: calc(var(--spacing) * 3);
-  }
   .gap-x-3\.75 {
     column-gap: calc(var(--spacing) * 3.75);
-  }
-  .gap-y-6 {
-    row-gap: calc(var(--spacing) * 6);
   }
   .gap-y-6\.25 {
     row-gap: calc(var(--spacing) * 6.25);
   }
-  .gap-y-12 {
-    row-gap: calc(var(--spacing) * 12);
-  }
   .gap-y-12\.5 {
     row-gap: calc(var(--spacing) * 12.5);
-  }
-  .gap-y-17 {
-    row-gap: calc(var(--spacing) * 17);
   }
   .gap-y-17\.5 {
     row-gap: calc(var(--spacing) * 17.5);
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .bg-purple {
     background-color: var(--color-purple);
@@ -282,17 +251,11 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
   }
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
-  }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -330,16 +293,9 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .shadow-\[0_5px_10px_0_rgba\(0\,0\,0\,0\.20\)\] {
     --tw-shadow: 0 5px 10px 0 var(--tw-shadow-color, rgba(0,0,0,0.20));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -397,31 +353,6 @@
       color: var(--color-white);
     }
   }
-  .sm\:col-span-2 {
-    @media (width >= 40rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .sm\:col-span-3 {
-    @media (width >= 40rem) {
-      grid-column: span 3 / span 3;
-    }
-  }
-  .md\:col-span-2 {
-    @media (width >= 48rem) {
-      grid-column: span 2 / span 2;
-    }
-  }
-  .md\:col-span-3 {
-    @media (width >= 48rem) {
-      grid-column: span 3 / span 3;
-    }
-  }
-  .md\:col-span-5 {
-    @media (width >= 48rem) {
-      grid-column: span 5 / span 5;
-    }
-  }
   .md\:col-span-6 {
     @media (width >= 48rem) {
       grid-column: span 6 / span 6;
@@ -430,11 +361,6 @@
   .md\:col-span-9 {
     @media (width >= 48rem) {
       grid-column: span 9 / span 9;
-    }
-  }
-  .md\:col-span-10 {
-    @media (width >= 48rem) {
-      grid-column: span 10 / span 10;
     }
   }
   .md\:mr-0 {
@@ -457,24 +383,9 @@
       max-width: calc(var(--spacing) * 50);
     }
   }
-  .md\:grid-cols-2 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-  }
-  .md\:grid-cols-5 {
-    @media (width >= 48rem) {
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-    }
-  }
   .md\:grid-cols-15 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(15, minmax(0, 1fr));
-    }
-  }
-  .md\:flex-row {
-    @media (width >= 48rem) {
-      flex-direction: row;
     }
   }
   .md\:items-start {
@@ -507,6 +418,11 @@
       padding-block: calc(var(--spacing) * 12.5);
     }
   }
+  .md\:pt-12\.5 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 12.5);
+    }
+  }
   .md\:text-left {
     @media (width >= 48rem) {
       text-align: left;
@@ -528,29 +444,9 @@
       line-height: calc(var(--spacing) * 7.5);
     }
   }
-  .lg\:col-span-5 {
-    @media (width >= 64rem) {
-      grid-column: span 5 / span 5;
-    }
-  }
-  .lg\:col-span-10 {
-    @media (width >= 64rem) {
-      grid-column: span 10 / span 10;
-    }
-  }
-  .lg\:grid-cols-15 {
-    @media (width >= 64rem) {
-      grid-template-columns: repeat(15, minmax(0, 1fr));
-    }
-  }
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
-    }
-  }
-  .xl\:col-span-5 {
-    @media (width >= 80rem) {
-      grid-column: span 5 / span 5;
     }
   }
 }
@@ -600,13 +496,13 @@
     width: calc(var(--spacing) * 7.5);
   }
   @media (width >= 48rem) {
-    font-size: 0.9375rem;
+    font-size: 1.25rem !important;
   }
 }
 .icon-mobile {
   height: calc(var(--spacing) * 10);
   width: calc(var(--spacing) * 10);
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -627,11 +523,6 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
-}
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -702,11 +593,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -772,6 +658,11 @@
   syntax: "*";
   inherits: false;
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
@@ -780,7 +671,6 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
@@ -796,7 +686,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
@@ -813,6 +702,7 @@
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-leading: initial;
+      --tw-border-style: solid;
     }
   }
 }
