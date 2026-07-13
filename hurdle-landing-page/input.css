@@ -7,3 +7,11 @@
   --color-purple: hsl(257, 40%, 49%);
   --color-magenta: hsl(300, 69%, 71%);
 }
+
+.icon-desktop {
+  @apply flex items-center justify-center text-white md:text-[1.25rem] md:w-7.5 md:h-7.5 border-2 border-white rounded-full hover:border-magenta hover:text-magenta focus:border-magenta focus:text-magenta active:border-magenta active:text-magenta transition duration-100 ease-in-out cursor-pointer;
+}
+
+.icon-mobile {
+  @apply w-10 h-10 [0.9375rem];
+}

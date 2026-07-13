@@ -11,10 +11,41 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="output.css">
+    <script src="https://kit.fontawesome.com/fafa440880.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
+    <div
+        class="main-container bg-purple bg-[url('./assets/bg-mobile.svg')] md:bg-[url('./assets/bg-desktop.svg')] bg-no-repeat bg-contain md:bg-cover w-full min-h-screen flex flex-col lg:justify-between gap-y-17.5 p-7.5 md:px-15 md:py-12.5">
+        <img src="./assets/logo.svg" alt="Hurdle logo" class="logo max-w-37.5 md:max-w-50">
+        <div class="container w-full flex flex-col items-center  md:grid md:grid-cols-15 gap-y-12.5 md:gap-x-15">
+            <img src="./assets/illustration-mockups.svg" alt="Illustration Mockup" class="w-full md:col-span-9">
+            <div class="content flex flex-col items-center md:items-start md:col-span-6 gap-y-6.25">
+                <h1
+                    class="text-white text-center text-[1.625rem] md:text-[2.5rem] md:text-left font-poppins font-semibold">
+                    Build The
+                    Community Your
+                    Fans
+                    Will Love
+                </h1>
+                <p
+                    class="font-open-sans font-normal text-base text-white text-center md:text-[1.125rem] md:text-left md:leading-7.5">
+                    Huddle
+                    re-imagines the way
+                    we
+                    build
+                    communities. You have a voice, but so does your audience. Create connections with your users as you
+                    engage in genuine discussion.</p>
+                <button
+                    class="w-fit font-poppins font-normal text-[1.125rem] text-purple bg-white px-15 py-2.5 rounded-full shadow-[0_5px_10px_0_rgba(0,0,0,0.20)] hover:bg-magenta hover:text-white active:bg-magenta active:text-white focus:bg-magenta focus:text-white focus:outline-none transition duration-100 ease-in-out cursor-pointer">Register</button>
+            </div>
+        </div>
+        <div class="social-links w-fit flex gap-x-3.75 mx-auto md:ml-auto md:mr-0">
+            <span class="icon-desktop icon-mobile"><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="icon-desktop icon-mobile"><i class="fa-brands fa-twitter"></i></span>
+            <span class="icon-desktop icon-mobile"><i class="fa-brands fa-instagram"></i></span>
+        </div>
+    </div>
 </body>
 
 </html>
