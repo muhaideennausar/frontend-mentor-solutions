@@ -13,28 +13,51 @@
 </head>
 
 <body>
-    <div class="container w-full min-h-screen bg-gray-950 px-7.5 flex items-center justify-center">
+    <div class="body-container w-full min-h-screen bg-gray-950 flex items-center justify-center px-7.5 md:px-0">
         <div
-            class="component-container w-full h-fit bg-linear-to-b x-from-[#212730] from-[#0e1625] x-to-[#191d23] to-[#0a1121] text-white font-overpass p-7.5 rounded-[20px]">
-            <img src="./assets/star.svg" alt="Star Vector" class="bg-gray-900 p-3.75 rounded-full">
-            <div class="text-content">
-                <h1 class="font-bold text-2xl">How did we do?</h1>
+            class="hidden component-container w-full md:max-w-100 h-fit flex flex-col bg-linear-to-b x-from-[#212730] from-[#0e1625] x-to-[#191d23] to-[#0a1121] text-white font-overpass p-7.5 md:p-8.75 rounded-[20px] gap-y-6.25 md:gap-y-7.5">
+            <img src="./assets/star.svg" alt="Star Vector" class="slef-start w-fit bg-gray-900 p-3.75 rounded-full">
+            <div class="text-content flex flex-col gap-y-6.25">
+                <h1 class="font-bold text-2xl md:text-[1.75rem]">How did we do?</h1>
                 <p class="font-normal text-sm text-gray-500 leading-6.25">Please let us know how we did with your
                     support request.
                     All feedback is
                     appreciated to help us
                     improve our offering!</p>
             </div>
-            <div class="rating-buttons">
-                <button class="btn-rating btn-rating-active">1</button>
-                <button class="btn-rating btn-rating-active">2</button>
-                <button class="btn-rating btn-rating-active">3</button>
-                <button class="btn-rating btn-rating-active">4</button>
-                <button class="btn-rating btn-rating-active">5</button>
+            <div class="rating-buttons w-full flex justify-between">
+                <button class="btn-rating" data-value="1">1</button>
+                <button class="btn-rating" data-value="2">2</button>
+                <button class="btn-rating" data-value="3">3</button>
+                <button class="btn-rating" data-value="4">4</button>
+                <button class="btn-rating" data-value="5">5</button>
             </div>
-            <button class="btn-submit">SUBMIT</button>
+            <button
+                class="btn-submit w-full bg-orange active:bg-white transition ease-in-out font-overpass font-bold text-[0.9375rem] text-gray-950 tracking-[0.15rem] px-5 py-3.75 md:p-5 rounded-full cursor-pointer">SUBMIT</button>
+        </div>
+        <div
+            class="thank-you-container w-full md:max-w-100 h-fit flex flex-col items-center bg-linear-to-b x-from-[#212730] from-[#0e1625] x-to-[#191d23] to-[#0a1121] text-white font-overpass p-7.5 md:p-8.75 rounded-[20px] gap-y-6.25 md:gap-y-7.5">
+            <img src="./assets/thank-you-illustration.svg" alt="Success Illustration" class="w-fit">
+
         </div>
     </div>
+    <script>
+        const ratingButtons = document.querySelectorAll('.btn-rating');
+        const submitButton = document.querySelector('.btn-submit');
+        let selectedRating = null;
+
+        ratingButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                ratingButtons.forEach(btn => {
+                    btn.classList.remove('btn-rating-active');
+                });
+
+                button.classList.add('btn-rating-active');
+                selectedRating = button.getAttribute('data-value');
+                console.log("Selected Rating:", selectedRating);
+            });
+        });
+    </script>
 </body>
 
 </html>

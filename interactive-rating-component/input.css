@@ -1,6 +1,24 @@
 @import "tailwindcss";
 
+@layer base {
+  h1,
+  h2,
+  h3,
+  button {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+}
+
 @theme {
   --color-orange: #fb7413;
   --font-overpass: "Overpass", sans-serif;
+}
+
+.btn-rating {
+  @apply w-10 h-10 md:w-12.5 md:h-12.5 bg-gray-900 hover:bg-orange flex items-center justify-center font-overpass font-normal text-[0.9375rem] md:text-[1.125rem] text-gray-500 hover:text-gray-950 transition ease-in-out rounded-full cursor-pointer;
+}
+
+.btn-rating-active {
+  @apply bg-white text-gray-950 hover:bg-white hover:text-gray-950;
 }
