@@ -4,11 +4,28 @@
   h1,
   h2,
   h3,
-  button {
+  h4 h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  button,
+  label,
+  th,
+  td,
+  legend,
+  summary,
+  dt,
+  dd {
     text-box-trim: trim-both;
     text-box-edge: cap alphabetic;
   }
 }
+
+/* * {
+  @apply font-overpass;
+} */
 
 @theme {
   --color-orange: #fb7413;
