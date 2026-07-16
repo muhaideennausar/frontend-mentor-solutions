@@ -1,6 +1,10 @@
 {
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
+    "cross-env": "^10.1.0",
     "tailwindcss": "^4.3.3"
+  },
+  "scripts": {
+    "watch": "npx tailwindcss -i ./%FOLDER%/input.css -o ./%FOLDER%/output.css --watch"
   }
 }

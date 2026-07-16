@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Accordion | Muhaideen Nausar | Frontend Mentor Challenge</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div
+        class="main-container w-full min-h-screen flex flex-col bg-purple-100 bg-[url('./assets/background-pattern-mobile.svg')] md:bg-[url('/assets/background-pattern-desktop.svg')] bg-no-repeat bg-contain font-work-sans text-purple-950 px-6.25">
+        <div
+            class="faq-container w-full md:max-w-137.5 h-fit bg-white p-7.5 rounded-[10px] _shadow-2xl shadow-[0_15px_30px_0_rgba(140,105,145,0.25)] my-37.5 md:mx-auto ">
+            <header class="flex items-center mb-7.5 md:mb-10 gap-x-6.25">
+                <img class="w-5.5 md:w-7.5" src="./assets/icon-star.svg" alt="Star Vector">
+                <h1 class="font-bold text-[2rem] md:text-[3.125rem]">FAQs</h1>
+            </header>
+            <div class="accordion-item flex flex-col">
+                <button class="accordion-header w-full flex items-center justify-between gap-x-7.5">
+                    <span class="font-semibold text-base text-[1.125rem] text-left tracking-[-0.03rem]">What is Frontend
+                        Mentor, and how
+                        will it help me?</span>
+                    <img src="./assets/icon-plus.svg" alt="Expand">
+                </button>
+                <div class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="font-normal text-[0.9375rem] text-purple-600 mt-6.25 leading-5.5">
+                        Frontend Mentor
+                        offers
+                        realistic coding
+                        challenges to help developers improve their
+                        frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+                        all levels and ideal for portfolio building.</p>
+                </div>
+            </div>
+            <hr class="border-purple-100 my-6.25">
+            <div class="accordion-item flex flex-col">
+                <button class="accordion-header w-full flex items-center justify-between gap-x-7.5">
+                    <span class="font-semibold text-base text-[1.125rem] text-left tracking-[-0.03rem]">Is Frontend
+                        Mentor free?</span>
+                    <img src="./assets/icon-plus.svg" alt="Expand">
+                </button>
+                <div class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="font-normal text-[0.9375rem] text-purple-600 mt-6.25 leading-5.5">
+                        Yes, Frontend
+                        Mentor
+                        offers both free and premium coding challenges, with the free option providing access to a range
+                        of projects suitable for all skill levels.</p>
+                </div>
+            </div>
+            <hr class="border-purple-100 my-6.25">
+            <div class="accordion-item flex flex-col">
+                <button class="accordion-header w-full flex items-center justify-between gap-x-7.5">
+                    <span class="font-semibold text-base text-[1.125rem] text-left tracking-[-0.03rem]">Can I use
+                        Frontend Mentor
+                        projects in my portfolio?</span>
+                    <img src="./assets/icon-plus.svg" alt="Expand">
+                </button>
+                <div class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="font-normal text-[0.9375rem] text-purple-600 mt-6.25 leading-5.5">
+                        Yes, you can use
+                        projects completed on Frontend Mentor in your portfolio. It's an excellent
+                        way to showcase your skills to potential employers!</p>
+                </div>
+            </div>
+            <hr class="border-purple-100 my-6.25">
+            <div class="accordion-item flex flex-col">
+                <button class="accordion-header w-full flex items-center justify-between gap-x-7.5">
+                    <span class="font-semibold text-base text-[1.125rem] text-left tracking-[-0.03rem]">How can I get
+                        help if I'm stuck
+                        on a Frontend Mentor challenge?</span>
+                    <img src="./assets/icon-plus.svg" alt="Expand">
+                </button>
+                <div class="accordion-body max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-in-out">
+                    <p class="font-normal text-[0.9375rem] text-purple-600 mt-6.25 leading-5.5">
+                        The best place to
+                        get
+                        help is inside Frontend Mentor's Discord community. There's a help
+                        channel where you can ask questions and seek support from other community members.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+        let activeHeader = null;
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                if (activeHeader && activeHeader !== header) {
+                    toggleAccordion(activeHeader, false);
+                };
+
+                const accordionContent = header.nextElementSibling;
+                const isOpening = accordionContent.classList.contains('max-h-0');
+
+                toggleAccordion(header, isOpening);
+
+                activeHeader = isOpening ? header : null;
+            });
+        });
+
+        function toggleAccordion(header, shouldOpen) {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('img');
+
+            if (shouldOpen) {
+                content.classList.remove('max-h-0', 'opacity-0');
+                content.classList.add('max-h-50', 'opacity-100');
+                icon.src = './assets/icon-minus.svg';
+                icon.alt = 'Collapse';
+            } else {
+                content.classList.remove('max-h-50', 'opacity-100');
+                content.classList.add('max-h-0', 'opacity-0');
+                icon.src = './assets/icon-plus.svg';
+                icon.alt = 'Expand';
+            }
+        }
+    </script>
+</body>
+
+</html>

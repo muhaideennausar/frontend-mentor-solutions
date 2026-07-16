@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 h5,
+  h6,
+  span,
+  a,
+  li,
+  button,
+  label,
+  th,
+  td,
+  legend,
+  summary,
+  dt,
+  dd {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+  }
+}
+
+@theme {
+  --font-work-sans: "Work Sans", sans-serif;
+
+  --color-purple-100: #f9f0ff;
+  --color-purple-600: #8c6991;
+  --color-purple-950: #2f1533;
+}
+
+button {
+  @apply hover:text-[#ad28eb] cursor-pointer;
+}
