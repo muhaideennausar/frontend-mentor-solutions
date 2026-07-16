@@ -212,26 +212,14 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .my-6 {
-    margin-block: calc(var(--spacing) * 6);
-  }
   .my-6\.25 {
     margin-block: calc(var(--spacing) * 6.25);
-  }
-  .my-37 {
-    margin-block: calc(var(--spacing) * 37);
   }
   .my-37\.5 {
     margin-block: calc(var(--spacing) * 37.5);
   }
-  .mt-6 {
-    margin-top: calc(var(--spacing) * 6);
-  }
   .mt-6\.25 {
     margin-top: calc(var(--spacing) * 6.25);
-  }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
   }
   .mb-7\.5 {
     margin-bottom: calc(var(--spacing) * 7.5);
@@ -266,9 +254,6 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-5 {
-    width: calc(var(--spacing) * 5);
-  }
   .w-5\.5 {
     width: calc(var(--spacing) * 5.5);
   }
@@ -278,23 +263,14 @@
   .w-full {
     width: 100%;
   }
-  .max-w-37 {
-    max-width: calc(var(--spacing) * 37);
-  }
   .max-w-37\.5 {
     max-width: calc(var(--spacing) * 37.5);
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -308,44 +284,23 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-x-3 {
-    column-gap: calc(var(--spacing) * 3);
-  }
   .gap-x-3\.75 {
     column-gap: calc(var(--spacing) * 3.75);
-  }
-  .gap-x-6 {
-    column-gap: calc(var(--spacing) * 6);
   }
   .gap-x-6\.25 {
     column-gap: calc(var(--spacing) * 6.25);
   }
-  .gap-x-7 {
-    column-gap: calc(var(--spacing) * 7);
-  }
   .gap-x-7\.5 {
     column-gap: calc(var(--spacing) * 7.5);
-  }
-  .gap-y-6 {
-    row-gap: calc(var(--spacing) * 6);
   }
   .gap-y-6\.25 {
     row-gap: calc(var(--spacing) * 6.25);
   }
-  .gap-y-7 {
-    row-gap: calc(var(--spacing) * 7);
-  }
   .gap-y-7\.5 {
     row-gap: calc(var(--spacing) * 7.5);
   }
-  .gap-y-12 {
-    row-gap: calc(var(--spacing) * 12);
-  }
   .gap-y-12\.5 {
     row-gap: calc(var(--spacing) * 12.5);
-  }
-  .gap-y-17 {
-    row-gap: calc(var(--spacing) * 17);
   }
   .gap-y-17\.5 {
     row-gap: calc(var(--spacing) * 17.5);
@@ -411,20 +366,11 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-3\.75 {
     padding: calc(var(--spacing) * 3.75);
   }
-  .p-7 {
-    padding: calc(var(--spacing) * 7);
-  }
   .p-7\.5 {
     padding: calc(var(--spacing) * 7.5);
-  }
-  .px-3 {
-    padding-inline: calc(var(--spacing) * 3);
   }
   .px-3\.75 {
     padding-inline: calc(var(--spacing) * 3.75);
@@ -432,14 +378,8 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
-  }
   .px-6\.25 {
     padding-inline: calc(var(--spacing) * 6.25);
-  }
-  .px-7 {
-    padding-inline: calc(var(--spacing) * 7);
   }
   .px-7\.5 {
     padding-inline: calc(var(--spacing) * 7.5);
@@ -447,20 +387,11 @@
   .px-15 {
     padding-inline: calc(var(--spacing) * 15);
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
-  }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.75 {
     padding-block: calc(var(--spacing) * 3.75);
-  }
-  .py-8 {
-    padding-block: calc(var(--spacing) * 8);
   }
   .py-8\.75 {
     padding-block: calc(var(--spacing) * 8.75);
@@ -501,17 +432,9 @@
   .text-\[2rem\] {
     font-size: 2rem;
   }
-  .leading-5 {
-    --tw-leading: calc(var(--spacing) * 5);
-    line-height: calc(var(--spacing) * 5);
-  }
   .leading-5\.5 {
     --tw-leading: calc(var(--spacing) * 5.5);
     line-height: calc(var(--spacing) * 5.5);
-  }
-  .leading-6 {
-    --tw-leading: calc(var(--spacing) * 6);
-    line-height: calc(var(--spacing) * 6);
   }
   .leading-6\.25 {
     --tw-leading: calc(var(--spacing) * 6.25);
@@ -552,9 +475,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .opacity-0 {
     opacity: 0%;
   }
@@ -568,10 +488,6 @@
   .shadow-\[0_15px_30px_0_rgba\(140\,105\,145\,0\.25\)\] {
     --tw-shadow: 0 15px 30px 0 var(--tw-shadow-color, rgba(140,105,145,0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .filter {
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -665,11 +581,11 @@
     .md\:gap-y-8\.75 {
       row-gap: calc(var(--spacing) * 8.75);
     }
+    .md\:bg-\[url\(\'\.\/assets\/background-pattern-desktop\.svg\'\)\] {
+      background-image: url('./assets/background-pattern-desktop.svg');
+    }
     .md\:bg-\[url\(\'\.\/assets\/bg-desktop\.svg\'\)\] {
       background-image: url('./assets/bg-desktop.svg');
-    }
-    .md\:bg-\[url\(\'\/assets\/background-pattern-desktop\.svg\'\)\] {
-      background-image: url('/assets/background-pattern-desktop.svg');
     }
     .md\:bg-cover {
       background-size: cover;
@@ -719,16 +635,8 @@
     }
   }
   @media (width >= 64rem) {
-    .lg\:mt-62\.5 {
-      margin-top: calc(var(--spacing) * 62.5);
-    }
     .lg\:justify-between {
       justify-content: space-between;
-    }
-  }
-  @media (width >= 80rem) {
-    .xl\:mt-62\.5 {
-      margin-top: calc(var(--spacing) * 62.5);
     }
   }
 }
@@ -890,11 +798,6 @@ button {
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-blur {
   syntax: "*";
   inherits: false;
@@ -991,7 +894,6 @@ button {
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-blur: initial;
       --tw-brightness: initial;
       --tw-contrast: initial;
