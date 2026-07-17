@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  button,
+  label,
+  th,
+  td,
+  legend,
+  summary,
+  dt,
+  dd {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    font-family: "Manrope", sans-serif;
+  }
+}
+
+@theme {
+  --font-manrope: "Manrope", sans-serif;
+
+  --color-very-dark-grayish-blue: #48556a;
+  --color-desaturated-dark-blue: #6d7f97;
+  --color-grayish-blue: #9eafc2;
+  --color-light-grayish-blue: #ecf2f8;
+}
+
+button {
+  cursor: pointer;
+}
+
+.social-icons img {
+  cursor: pointer;
+}

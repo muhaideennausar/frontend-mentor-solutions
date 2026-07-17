@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component | Muhaideen Nausar | Frontend Mentor</title>
+    <link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div
+        class="body-container w-full min-h-screen bg-light-grayish-blue md:flex md:items-center md:justify-center px-6.25 py-12.5">
+        <div
+            class="article-card relative w-full h-fit md:max-w-175 md:flex bg-white rounded-[10px] overflow-hidden md:overflow-visible shadow-[0_15px_50px_rgba(158,175,194,0.2)]">
+            <div class="banner-container h-50 md:h-auto md:w-[300px] md:shrink-0 overflow-hidden md:rounded-l-[10px]">
+                <img class="w-full h-full object-cover object-center md:object-left" src="./assets/article-banner.jpg"
+                    alt="A flower vase on top of a green table that has a set of drawers in it.">
+            </div>
+            <div class="article-body flex flex-col gap-y-10 md:gap-y-7.5 px-7.5 pt-10 pb-5">
+                <div class="text-content flex flex-col gap-y-6.25 md:gap-y-7.5">
+                    <h1 class="article-header font-bold text-lg md:text-xl text-very-dark-grayish-blue">Shift the
+                        overall look and
+                        feel by adding these
+                        wonderful touches to
+                        furniture in your home</h1>
+                    <p class="article-summary font-medium text-sm text-desaturated-dark-blue">Ever been in a room and
+                        felt like something was
+                        missing? Perhaps it felt
+                        slightly bare and
+                        uninviting. I've got some simple tips to help you make any room feel complete.</p>
+                </div>
+                <div class="article-footer flex items-center">
+                    <img class="w-10 h-10 mr-3.75 rounded-full" src="./assets/profile-picture.jpg"
+                        alt="Michelle Appleton">
+                    <span class="flex flex-col gap-y-2.5">
+                        <span class="font-bold text-[0.8125rem] text-very-dark-grayish-blue">Michelle Appleton</span>
+                        <span class="font-medium text-[0.8125rem] text-grayish-blue">
+                            28 Jun 2020
+                        </span>
+                    </span>
+                    <button
+                        class="share w-10 h-10 bg-light-grayish-blue ml-auto rounded-full transition-colors duration-300">
+                        <svg class="w-3.75 fill-desaturated-dark-blue mx-auto transition-colors duration-300"
+                            xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                            <path
+                                d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div
+                class="share-tooltip transition-all duration-300 opacity-0 invisible absolute z-10 bottom-0 md:bottom-22.5 md:right-12 md:translate-x-1/2 w-full md:w-fit flex items-center bg-very-dark-grayish-blue gap-x-5 px-7.5 py-5 md:px-8 md:py-4 md:rounded-[10px] md:after:content-[''] md:after:absolute md:after:w-5 md:after:h-5 md:after:bg-very-dark-grayish-blue md:after:-bottom-2 md:after:left-1/2 md:after:-translate-x-1/2 md:after:rotate-45 md:shadow-[0_5px_10px_rgba(158,175,194,0.2)]">
+                <p class="font-medium text-xs text-grayish-blue tracking-[0.5rem]">SHARE</p>
+                <div class="social-icons flex gap-x-3.75">
+                    <img src="./assets/icon-facebook.svg" alt="Facebook">
+                    <img src="./assets/icon-twitter.svg" alt="Twitter">
+                    <img src="./assets/icon-pinterest.svg" alt="Pinterest">
+                </div>
+                <button class="md:hidden share-active w-10 h-10 bg-desaturated-dark-blue ml-auto rounded-full">
+                    <svg class="w-3.75 mx-auto fill-light-grayish-blue" xmlns=" http://www.w3.org/2000/svg" width="15"
+                        height="13">
+                        <path
+                            d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const primaryShareButton = document.querySelector('.share');
+        const primaryShareSvg = primaryShareButton.querySelector('svg');
+        const tooltip = document.querySelector('.share-tooltip');
+        const activeShareButton = document.querySelector('.share-active');
+
+        primaryShareButton.addEventListener('click', () => {
+            tooltip.classList.toggle('opacity-0');
+            tooltip.classList.toggle('invisible');
+            primaryShareButton.classList.toggle('bg-light-grayish-blue');
+            primaryShareButton.classList.toggle('bg-desaturated-dark-blue');
+            primaryShareSvg.classList.toggle('fill-light-grayish-blue');
+        });
+
+        activeShareButton.addEventListener('click', () => {
+            tooltip.classList.toggle('opacity-0');
+            tooltip.classList.toggle('invisible');
+            primaryShareButton.classList.toggle('bg-light-grayish-blue');
+            primaryShareButton.classList.toggle('bg-desaturated-dark-blue');
+            primaryShareSvg.classList.toggle('fill-light-grayish-blue');
+        });
+    </script>
+</body>
+
+</html>
