@@ -14,7 +14,77 @@
 </head>
 
 <body>
+    <div
+        class="main-container w-full min-h-screen bg-linear-to-b from-white to-[#FFF5F5] md:grid md:grid-cols-[1fr_auto] md:grid-rows-[auto_1fr]">
+        <div
+            class="header px-12.5 py-7.5 max-w-87.5 md:max-w-125 mx-auto md:p-0 md:pt-16 md:col-start-1 md:row-start-1 w-full">
+            <img class="w-30 md:w-37.5" src="./assets/logo.svg" alt="Base Apparel">
+        </div>
+        <picture class="md:col-start-2 md:row-start-1 md:row-span-2">
+            <source media="(min-width: 768px)" srcset="./assets/hero-desktop.jpg">
+            <img class=" w-full h-full object-cover" src="./assets/hero-mobile.jpg"
+                alt="Base Apparel model in orange shirt">
+        </picture>
+        <div class="content-box md:col-start-1 md:row-start-2 flex flex-col justify-center">
+            <div class="content max-w-87.5 md:max-w-125 px-7.5 py-17.5 mx-auto md:p-0 flex flex-col gap-y-12.5">
+                <div class="text-content text-center md:text-left">
+                    <h1
+                        class="font-semibold text-[2.5rem] md:text-[4rem] text-gray-900 leading-11.25 md:leading-17.5 tracking-[0.2em]">
+                        <span class="font-light text-pink-400">WE'RE</span><br>COMING<br>SOON
+                    </h1>
+                    <p class="font-semibold text-sm md:text-base text-pink-400 md:leading-7.5 mt-7.5 md:mt-12.5">Hello
+                        fellow
+                        shoppers! We're
+                        currently
+                        building
+                        our
+                        new fashion
+                        store. Add
+                        your email
+                        below to stay
+                        up-to-date with announcements and our launch deals.</p>
+                </div>
+                <form id="email-form" class="relative w-full h-12.5 md:h-15 flex border border-pink-400 rounded-full">
+                    <div class="flex-1 flex items-center px-5 gap-x-2.5">
+                        <input id="email-input" placeholder="Email Address"
+                            class="w-full flex-1 font-medium text-base text-gray-900 placeholder:text-pink-400 placeholder:opacity-50 outline-none">
+                        <img id="error-icon" src="./assets/icon-error.svg" alt="Error!" class="hidden w-6 h-6">
+                    </div>
+                    <button type="submit"
+                        class="relative overflow-hidden h-full bg-linear-135 from-[#F8BFBF] to-[#EE8C8C] px-7.5 md:px-10 rounded-full shadow-[0_15px_15px_rgba(206,151,151,0.25)] hover:shadow-[0_15px_15px_rgba(206,151,151,0.50)] before:absolute before:inset-0 before:bg-white/50 before:opacity-0 hover:before:opacity-100 before:transition-opacity">
+                        <img src="./assets/icon-arrow.svg" alt="Submit">
+                    </button>
+                    <span id="error-msg" class="hidden absolute left-5 -bottom-5 text-sm text-red-500">Please provide a
+                        valid
+                        email</span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const form = document.getElementById('email-form');
+        const emailInput = document.getElementById('email-input');
+        const errorIcon = document.getElementById('error-icon');
+        const errorMsg = document.getElementById('error-msg');
 
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const emailValue = emailInput.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!emailValue || !emailPattern.test(emailValue)) {
+                errorIcon.classList.remove('hidden');
+                errorMsg.classList.remove('hidden');
+                form.classList.replace('border-pink-400', 'border-red-500');
+            } else {
+                errorIcon.classList.add('hidden');
+                errorMsg.classList.add('hidden');
+                form.classList.replace('border-red-500', 'border-pink-400');
+                emailInput.value = '';
+                alert('Thanks for Subscribing!');
+            }
+        })
+    </script>
 </body>
 
 </html>
