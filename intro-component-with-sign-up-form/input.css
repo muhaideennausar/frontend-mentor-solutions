@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  button,
+  label,
+  th,
+  td,
+  legend,
+  summary,
+  dt,
+  dd {
+    text-box-trim: trim-both;
+    text-box-edge: cap alphabetic;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@theme {
+  --color-red-400: #ff7a7a;
+  --color-green-400: #38cc8c;
+  --color-purple-700: #6055a5;
+  --color-gray-900: #3e3c49;
+  --color-purple-350: #b9b6d3;
+}
+
+.tb {
+  @apply border border-blue-600;
+}
+
+.input-default {
+  @apply w-full h-15 placeholder:font-medium placeholder:text-gray-900 placeholder:opacity-50 border border-purple-350 px-7.5 rounded-[5px] outline-none;
+}
+
+.input-focused {
+  @apply font-semibold text-[0.9375rem] text-gray-900 border-2 border-purple-700 outline-none;
+}
+
+button {
+  @apply w-full h-15 bg-green-400 font-semibold text-base text-white uppercase tracking-[0.03em] rounded-[5px] shadow-[0_5px_0_rgb(48,174,119)];
+}
