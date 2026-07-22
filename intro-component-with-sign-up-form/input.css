@@ -37,13 +37,22 @@
 }
 
 .input-default {
-  @apply w-full h-15 placeholder:font-medium placeholder:text-gray-900 placeholder:opacity-50 border border-purple-350 px-7.5 rounded-[5px] outline-none;
+  @apply w-full h-15 placeholder:font-medium placeholder:text-gray-900 placeholder:opacity-50 border border-purple-350 px-6.25 rounded-[5px] outline-none;
 }
 
-.input-focused {
+.input-default:focus,
+.input-default:not(:placeholder-shown) {
   @apply font-semibold text-[0.9375rem] text-gray-900 border-2 border-purple-700 outline-none;
 }
 
 button {
-  @apply w-full h-15 bg-green-400 font-semibold text-base text-white uppercase tracking-[0.03em] rounded-[5px] shadow-[0_5px_0_rgb(48,174,119)];
+  @apply w-full h-15 bg-green-400 font-semibold text-base text-white uppercase tracking-[0.03em] rounded-[5px] shadow-[0_5px_0_rgb(48,174,119)] transition-all duration-150 ease-in-out;
+}
+
+button:active {
+  @apply shadow-[0_3px_0_rgb(48,174,119)] translate-y-[2px];
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
 }
