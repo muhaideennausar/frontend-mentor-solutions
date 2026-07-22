@@ -178,6 +178,21 @@
   }
 }
 @layer utilities {
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .top-1\/2 {
+    top: calc(1 / 2 * 100%);
+  }
+  .right-7\.5 {
+    right: calc(var(--spacing) * 7.5);
+  }
+  .mt-2\.5 {
+    margin-top: calc(var(--spacing) * 2.5);
+  }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
@@ -187,11 +202,18 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .min-h-screen {
     min-height: 100vh;
   }
   .w-full {
     width: 100%;
+  }
+  .-translate-y-1\/2 {
+    --tw-translate-y: calc(calc(1 / 2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .flex-col {
     flex-direction: column;
@@ -244,8 +266,14 @@
   .text-center {
     text-align: center;
   }
+  .text-right {
+    text-align: right;
+  }
   .text-\[0\.625rem\] {
     font-size: 0.625rem;
+  }
+  .text-\[0\.6875rem\] {
+    font-size: 0.6875rem;
   }
   .text-\[1\.75rem\] {
     font-size: 1.75rem;
@@ -275,6 +303,9 @@
   .text-white {
     color: var(--color-white);
   }
+  .italic {
+    font-style: italic;
+  }
   .opacity-100 {
     opacity: 100%;
   }
@@ -282,11 +313,48 @@
     --tw-shadow: 0 7px 0 var(--tw-shadow-color, rgba(0,0,0,0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+  @media (width >= 48rem) {
+    .md\:mt-12\.5 {
+      margin-top: calc(var(--spacing) * 12.5);
+    }
+    .md\:max-w-112\.5 {
+      max-width: calc(var(--spacing) * 112.5);
+    }
+    .md\:min-w-137\.5 {
+      min-width: calc(var(--spacing) * 137.5);
+    }
+    .md\:flex-row {
+      flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:justify-center {
+      justify-content: center;
+    }
+    .md\:gap-x-25 {
+      column-gap: calc(var(--spacing) * 25);
+    }
+    .md\:bg-\[url\(\'\.\/assets\/bg-intro-desktop\.png\'\)\] {
+      background-image: url('./assets/bg-intro-desktop.png');
+    }
+    .md\:px-25 {
+      padding-inline: calc(var(--spacing) * 25);
+    }
+    .md\:py-0 {
+      padding-block: 0px;
+    }
+    .md\:text-left {
+      text-align: left;
+    }
+    .md\:text-\[3rem\] {
+      font-size: 3rem;
+    }
+  }
 }
 @layer base {
-  h1, h2, h3, h4 h5, h6, p, span, a, li, button, label, th, td, legend, summary, dt, dd {
+  h1, h2, h3, h4, h5, h6, p, span, a, li, button, label, th, td, legend, summary, dt, dd, input {
     text-box-trim: trim-both;
-    text-box-edge: cap alphabetic;
     font-family: "Poppins", sans-serif;
   }
 }
@@ -327,9 +395,19 @@
   --tw-outline-style: none;
   outline-style: none;
 }
+.input-default.input-error {
+  border-style: var(--tw-border-style);
+  border-width: 2px;
+  border-color: var(--color-red-400);
+  color: var(--color-red-400);
+  &:focus {
+    border-color: var(--color-red-400);
+  }
+}
 button {
   height: calc(var(--spacing) * 15);
   width: 100%;
+  cursor: pointer;
   border-radius: 5px;
   background-color: var(--color-green-400);
   font-size: var(--text-base);
@@ -356,6 +434,21 @@ button:active {
   --tw-shadow: 0 3px 0 var(--tw-shadow-color, rgb(48,174,119));
   box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   background-image: linear-gradient( rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5) );
+}
+@property --tw-translate-x {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-y {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
+}
+@property --tw-translate-z {
+  syntax: "*";
+  inherits: false;
+  initial-value: 0;
 }
 @property --tw-font-weight {
   syntax: "*";
@@ -443,24 +536,12 @@ button:active {
   syntax: "*";
   inherits: false;
 }
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-translate-z: 0;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
@@ -480,9 +561,6 @@ button:active {
       --tw-tracking: initial;
       --tw-duration: initial;
       --tw-ease: initial;
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
     }
   }
 }
