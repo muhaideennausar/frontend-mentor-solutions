@@ -1,0 +1,25 @@
+{
+  "name": "frontend-mentor-solutions",
+  "version": "1.0.0",
+  "description": "A comprehensive monorepo containing my solutions to [Frontend Mentor](https://www.frontendmentor.io) challenges. This repository showcases various web development skills through real-world projects ranging from beginner to advanced levels.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhaideennausar/frontend-mentor-solutions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/muhaideennausar/frontend-mentor-solutions/issues"
+  },
+  "homepage": "https://github.com/muhaideennausar/frontend-mentor-solutions#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
