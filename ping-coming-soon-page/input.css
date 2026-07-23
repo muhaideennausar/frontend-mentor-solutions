@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  a,
+  li,
+  button,
+  label,
+  th,
+  td,
+  legend,
+  summary,
+  dt,
+  dd,
+  input {
+    text-box-trim: trim-both;
+    /* text-box-edge: cap alphabetic; */
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@theme {
+  --color-blue-500: #4f7df3;
+  --color-blue-200: #c2d3ff;
+  --color-red-400: #ff5263;
+}
