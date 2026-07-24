@@ -561,6 +561,9 @@
   .border-purple-100 {
     border-color: var(--color-purple-100);
   }
+  .border-red-400 {
+    border-color: var(--color-red-400);
+  }
   .border-red-500 {
     border-color: var(--color-red-500);
   }
@@ -1018,7 +1021,17 @@
   .focus-within\:border-blue-500:focus-within {
     border-color: var(--color-blue-500);
   }
+  .focus-within\:border-red-400:focus-within {
+    border-color: var(--color-red-400);
+  }
   @media (hover: hover) {
+    .hover\:border-0:hover {
+      border-style: var(--tw-border-style);
+      border-width: 0px;
+    }
+    .hover\:bg-blue-500:hover {
+      background-color: var(--color-blue-500);
+    }
     .hover\:text-white:hover {
       color: var(--color-white);
     }
@@ -1038,11 +1051,41 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  .active\:bg-blue-500:active {
+    background-color: var(--color-blue-500);
+  }
   .active\:bg-white:active {
     background-color: var(--color-white);
   }
   .active\:text-white:active {
     color: var(--color-white);
+  }
+  .disabled\:cursor-not-allowed:disabled {
+    cursor: not-allowed;
+  }
+  @media (hover: hover) {
+    .disabled\:hover\:bg-blue-200\/20:disabled:hover {
+      background-color: color-mix(in srgb, #c2d3ff 20%, transparent);
+    }
+    @supports (color: color-mix(in lab, red, red)) {
+      .disabled\:hover\:bg-blue-200\/20:disabled:hover {
+        background-color: color-mix(in oklab, var(--color-blue-200) 20%, transparent);
+      }
+    }
+    .disabled\:hover\:bg-\[image\:linear-gradient\(\#c2d3ff80\,\#c2d3ff80\)\]:disabled:hover {
+      background-image: linear-gradient(#c2d3ff80,#c2d3ff80);
+    }
+  }
+  .data-\[invalid\]\:cursor-not-allowed[data-invalid] {
+    cursor: not-allowed;
+  }
+  @media (hover: hover) {
+    .data-\[invalid\]\:hover\:bg-\[image\:linear-gradient\(\#c2d3ff80\,\#c2d3ff80\)\][data-invalid]:hover {
+      background-image: linear-gradient(#c2d3ff80,#c2d3ff80);
+    }
+  }
+  .data-\[invalid\]\:active\:bg-\[image\:linear-gradient\(\#c2d3ff80\,\#c2d3ff80\)\][data-invalid]:active {
+    background-image: linear-gradient(#c2d3ff80,#c2d3ff80);
   }
   @media (width >= 48rem) {
     .md\:right-12 {
