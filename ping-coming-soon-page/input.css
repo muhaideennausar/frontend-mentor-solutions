@@ -22,7 +22,7 @@
   input {
     text-box-trim: trim-both;
     /* text-box-edge: cap alphabetic; */
-    font-family: "Poppins", sans-serif;
+    font-family: "Libre Franklin", sans-serif;
   }
 }
 
@@ -30,4 +30,10 @@
   --color-blue-500: #4f7df3;
   --color-blue-200: #c2d3ff;
   --color-red-400: #ff5263;
+  --color-gray-400: #969696;
+  --color-blue-950: #151f29;
+}
+
+.tb {
+  @apply border border-blue-600;
 }
