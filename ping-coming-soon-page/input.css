@@ -34,6 +34,10 @@
   --color-blue-950: #151f29;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
 .tb {
   @apply border border-blue-600;
 }

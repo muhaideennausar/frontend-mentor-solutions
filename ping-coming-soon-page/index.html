@@ -15,38 +15,42 @@
 </head>
 
 <body>
-    <div class="main-container w-full min-h-screen flex flex-col items-center px-7.5 pt-25 pb-12.5 gap-y-12.5">
-        <img src="./assets/logo.svg" alt="PING." class="logo h-5">
+    <div
+        class="main-container w-full min-h-screen flex flex-col items-center px-7.5 pt-25 pb-12.5 gap-y-12.5 md:gap-y-17.5">
+        <img src="./assets/logo.svg" alt="PING." class="logo h-5 md:h-6.25">
         <div class="text-content text-center">
-            <h1 class="font-light text-[1.75rem] text-gray-400">We are launching <span
+            <h1 class="font-light text-[1.75rem] md:text-[3rem] text-gray-400">We are launching <span
                     class="font-bold text-blue-950">soon!</span>
             </h1>
-            <p class="font-light text-base text-blue-950 mt-6.25">Subscribe and get notified</p>
+            <p class="font-light text-base md:text-xl text-blue-950 mt-6.25 md:mt-7.5">Subscribe and get notified</p>
         </div>
-        <form class="w-full flex flex-col gap-y-2.5" novalidate>
+        <form class="w-full md:w-fit flex flex-col md:flex-row gap-y-2.5 md:gap-x-2.5 md:mx-auto" novalidate>
             <div>
                 <input type="email" placeholder="Your email address"
-                    class="w-full h-12.5 text-[0.9375rem] text-blue-950 border-2 border-blue-200 px-7.5 rounded-full placeholder:text-blue-200 focus-within:border-blue-500 outline-none">
-                <p class="w-full text-xs text-red-400 text-center italic mt-2.5 mb-5">Please provide
+                    class="w-full md:min-w-100 h-12.5 md:h-13.75 text-[0.9375rem] text-blue-950 border-2 border-blue-200 px-7.5 rounded-full placeholder:text-blue-200 focus-within:border-blue-500 outline-none">
+                <p
+                    class="hidden w-full text-xs text-red-400 text-center md:text-left italic md:pl-7.5 mt-2.5 mb-5 md:mb-0">
+                    Please
+                    provide
                     a
                     valid email address</p>
             </div>
             <button
-                class="w-full h-12.5 bg-blue-500 font-semibold text-white rounded-full shadow-[0_7px_10px_rgba(79,125,243,0.20)]">Notify
+                class="w-full md:w-fit h-12.5 md:h-13.75 bg-blue-500 font-semibold text-white md:px-12.5 rounded-full shadow-[0_7px_10px_rgba(79,125,243,0.20)]">Notify
                 Me</button>
         </form>
-        <img src="./assets/illustration-dashboard.png" alt="Dashboard Illustration" class="">
+        <img src="./assets/illustration-dashboard.png" alt="Dashboard Illustration" class="md:max-w-150">
         <div class="footer w-fit mx-auto">
             <div class="social-links w-fit flex gap-x-5 mx-auto">
                 <a href="https://www.facebook.com/"
-                    class="w-7.5 h-7.5 flex items-center justify-center border border-blue-200 rounded-full"><i
-                        class="fa-brands fa-facebook-f h-3.75 text-blue-500"></i></a>
+                    class="w-7.5 h-7.5 md:w-10 md:h-10 flex items-center justify-center border border-blue-200 rounded-full"><i
+                        class="fa-brands fa-facebook-f h-3.75 md:h-5 text-blue-500"></i></a>
                 <a href="https://www.twitter.com/"
-                    class="w-7.5 h-7.5 flex items-center justify-center border border-blue-200 rounded-full"><i
-                        class="fa-brands fa-twitter w-3.75 text-blue-500"></i></a>
+                    class="w-7.5 h-7.5 md:w-10 md:h-10 flex items-center justify-center border border-blue-200 rounded-full"><i
+                        class="fa-brands fa-twitter w-3.75 md:w-5 text-blue-500"></i></a>
                 <a href="https://www.instagram.com/"
-                    class="w-7.5 h-7.5 flex items-center justify-center border border-blue-200 rounded-full"><i
-                        class="fa-brands fa-instagram h-3.75 text-blue-500"></i></a>
+                    class="w-7.5 h-7.5 md:w-10 md:h-10 flex items-center justify-center border border-blue-200 rounded-full"><i
+                        class="fa-brands fa-instagram h-3.75 md:h-5 text-blue-500"></i></a>
             </div>
             <p class="text-xs text-gray-400 mt-7.5">© Copyright Ping. All rights reserved.</p>
         </div>
